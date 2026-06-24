@@ -8,7 +8,7 @@ const searchBtn = document.getElementById("search-btn");
 
 
 searchBtn.addEventListener("click", () => {
-  fetch(`http://www.omdbapi.com/?apikey=1848dbd&s=${movieInput.value}`)
+  fetch(`https://www.omdbapi.com/?apikey=1848dbd&s=${movieInput.value}`)
     .then((response) => response.json())
     .then((data) => {
       movieArr = data.Search;
