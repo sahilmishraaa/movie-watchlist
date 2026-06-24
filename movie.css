@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    background:#1f1f1f;
+    display:flex;
+    justify-content:center;
+    padding:20px;
+}
+
+.container{
+    width:550px;
+    background:#121212;
+    color:white;
+}
+
+/* Hero */
+
+.hero{
+    height:220px;
+    background:url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba")
+               center/cover;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,.6);
+}
+
+.overlay{
+    position:relative;
+    z-index:2;
+    height:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 40px;
+}
+
+.overlay h1{
+    font-size:3rem;
+    font-weight:700;
+}
+
+.overlay a{
+    color:white;
+    text-decoration:none;
+    font-size:.95rem;
+}
+
+/* Search */
+
+.search-box{
+    display:flex;
+    width:90%;
+    margin:-22px auto 25px;
+    position:relative;
+    z-index:3;
+}
+
+.search-box input{
+    flex:1;
+    padding:14px;
+    border:none;
+    outline:none;
+    background:#2e2e2f;
+    color:white;
+    border-radius:8px 0 0 8px;
+}
+
+.search-box button{
+    padding:14px 30px;
+    border:none;
+    background:#4b5563;
+    color:white;
+    cursor:pointer;
+    border-radius:0 8px 8px 0;
+}
+
+/* Movies */
+
+.movies{
+    padding:0 25px 25px;
+    min-height: 400px;
+}
+
+
+.movie-card{
+    display:flex;
+    gap:20px;
+    padding:20px 0;
+    border-bottom:1px solid #333;
+}
+
+.movie-card img{
+    width:90px;
+    height:130px;
+    object-fit:cover;
+}
+
+.movie-info{
+    flex:1;
+}
+
+.title-row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:10px;
+}
+
+.title-row h2{
+    font-size:1.4rem;
+    font-weight:500;
+}
+
+.title-row span{
+    color:#fbbf24;
+    font-size:.9rem;
+}
+
+.details{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    font-size:.85rem;
+    color:#cfcfcf;
+    margin-bottom:12px;
+}
+
+.details span:last-child{
+    cursor:pointer;
+}
+
+.movie-info p{
+    color:#9ca3af;
+    line-height:1.5;
+    font-size:.95rem;
+}
